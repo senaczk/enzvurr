@@ -1,0 +1,22 @@
+Lanjutkan debugging startup bot WhatsApp. Runtime hosting sudah berhasil diganti ke Node.js v20.20.0, tetapi server masih OFFLINE dengan error:
+
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+at readConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:91:33)
+at findAndReadConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:50:84)
+
+Console juga menampilkan beberapa peringatan npm/yarn allow-scripts untuk package seperti baileys, protobufjs, sharp, dan sharp-go.
+
+Tugas:
+
+1. Audit package.json, lockfile, TypeScript configuration, startup command, dan dependency tree.
+2. Cari tahu mengapa ts-node yang berasal dari /usr/local/lib/node_modules/ts-node gagal membaca ts.sys.
+3. Periksa apakah startup script memakai instalasi global ts-node yang tidak cocok dengan dependency project.
+4. Periksa versi TypeScript dan ts-node yang benar-benar terpasang serta kompatibilitasnya.
+5. Periksa apakah build atau instalasi dependency belum selesai atau ada package yang diblokir oleh mekanisme allow-scripts.
+6. Terapkan perbaikan minimal berdasarkan bukti. Prioritaskan penggunaan dependency lokal project yang kompatibel jika memang diperlukan.
+7. Jangan menjalankan npm audit fix --force, meng-upgrade semua package, atau menghapus lockfile tanpa alasan teknis yang jelas.
+8. Jangan mengubah fitur bot, konfigurasi WhatsApp, kredensial, session, atau file autentikasi.
+9. Jalankan pemeriksaan dan tes startup yang tersedia. Jika tidak bisa mereproduksi environment hosting, jelaskan keterbatasannya.
+10. Laporkan file yang diubah, akar masalah yang ditemukan, perintah instalasi yang tepat, dan startup command yang seharusnya digunakan di NodePod.
+
+Mulai dengan audit. Jangan menebak nama file atau entry point. Jangan mengklaim server sudah berhasil berjalan sebelum ada bukti pengujian.
