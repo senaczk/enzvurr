@@ -1,0 +1,59 @@
+You are taking over an unresolved Node.js WhatsApp bot deployment issue. Diagnose the actual cause and implement a minimal, evidence-based fix.
+
+Environment
+
+- Hosting: NodePod / Pterodactyl-style panel
+- Docker image: Node.js 20
+- Runtime shown in console: Node.js v20.20.2
+- Project: purchased WhatsApp bot, rebranded as GracelynBot
+- Owner branding: Park Grace
+- The project was extracted from a ZIP archive.
+- Preserve all existing bot features, authentication, and WhatsApp session data.
+
+Persistent startup error
+
+/usr/local/lib/node_modules/ts-node/dist/configuration.js:91
+
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+    at readConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:91:33)
+    at findAndReadConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:50:84)
+    at phase3 (/usr/local/lib/node_modules/ts-node/dist/bin.js:254:67)
+    at bootstrap (/usr/local/lib/node_modules/ts-node/dist/bin.js:47:30)
+
+Node.js v20.20.2
+Server marked as offline.
+
+The hosting panel's Startup Command template invokes either Node or global ts-node based on the configured MAIN_FILE extension. The Main File field previously contained "node index.js", which was incorrect because the panel already constructs the command. It was subsequently changed, but the ts-node error persists.
+
+Previous inspection reported:
+
+- No TypeScript compiler was identified in application source; one occurrence of the word "typescript" was only a MIME type in "core/utils/message-builder.js".
+- "package.json" and the dependency tree were inspected, but the actual hosting startup configuration and global modules could not be accessed from the local environment.
+- The server is not out of memory.
+- npm/yarn reports blocked install scripts for some dependencies, including sharp and protobufjs; determine whether these warnings are relevant instead of assuming they caused the ts-node failure.
+
+Required workflow
+
+1. Inspect the actual project files, package.json, lockfile, entry point, and previous changes.
+2. Determine whether the app is plain JavaScript or genuinely requires ts-node.
+3. Identify exactly why the panel invokes "/usr/local/lib/node_modules/ts-node/dist/bin.js".
+4. Inspect the hosting startup configuration and determine the correct value for MAIN_FILE based on the real entry point.
+5. If the app is JavaScript, recommend and implement a Node-based startup only if supported by verified project structure and hosting configuration.
+6. If a source-level change is needed, make a backup and keep the change minimal.
+7. Do not guess filenames, overwrite session files, reset WhatsApp authentication, delete the lockfile, upgrade all packages, or use "npm audit fix --force".
+8. Do not modify unrelated branding or bot functionality.
+9. Run the available checks and report actual results. Clearly distinguish local checks from anything that requires access to the hosting panel.
+10. Do not claim success until there is evidence.
+
+Deliverables
+
+Provide:
+
+- Root cause and supporting evidence.
+- Exact files changed.
+- Exact hosting Startup settings required.
+- Any necessary dependency installation command.
+- Verification steps and results.
+- Remaining uncertainty, if the panel environment cannot be inspected.
+
+Start by investigating the current state. Do not merely repeat generic troubleshooting instructions.
