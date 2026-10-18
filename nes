@@ -1,0 +1,28 @@
+Lanjutkan perbaikan startup bot WhatsApp untuk deployment NodePod/Pterodactyl.
+
+Kondisi terbaru:
+
+- Docker Image: Node.js 20
+- Runtime yang terdeteksi: Node.js v20.20.2
+- Main File sebelumnya berisi "node index.js", lalu diarahkan untuk menggunakan "index.js".
+- Server masih OFFLINE dengan Exit code 1.
+- Out of memory: false.
+
+Error yang masih muncul:
+
+TypeError: Cannot read properties of undefined (reading 'fileExists')
+at readConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:91:33)
+at findAndReadConfig (/usr/local/lib/node_modules/ts-node/dist/configuration.js:50:84)
+
+Tugas:
+
+1. Periksa source code dan package.json untuk menemukan entry point aplikasi yang benar.
+2. Periksa mengapa startup masih masuk ke instalasi global ts-node.
+3. Tentukan apakah file utama seharusnya dijalankan dengan "node" atau "ts-node", berdasarkan isi project yang sebenarnya.
+4. Periksa apakah konfigurasi startup menggunakan MAIN_FILE yang benar dan bagaimana template panel membangun perintah tersebut.
+5. Berikan konfigurasi Startup Command dan Main File yang tepat untuk panel ini.
+6. Jika perubahan source code diperlukan, lakukan perubahan minimal dan backup file sebelum mengedit.
+7. Jangan menghapus lockfile, meng-upgrade seluruh dependency, menggunakan "npm audit fix --force", atau mereset session WhatsApp tanpa alasan yang terbukti.
+8. Jangan mengklaim server sudah berhasil berjalan jika hanya diuji secara lokal.
+
+Mulai dengan diagnosis berbasis source code dan laporkan penyebab yang terbukti sebelum menerapkan perubahan.
