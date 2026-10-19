@@ -1,0 +1,647 @@
+PROJECT: VERA — INTERACTIVE BIRTHDAY BOOK
+
+Bertindak sebagai senior frontend developer, creative developer, UI/UX designer, dan motion designer.
+
+Bangun website ucapan ulang tahun untuk Vera dengan konsep buku digital elegan berwarna pink, tekstur kertas premium, album foto, animasi 3D, dan custom SVG decorations.
+
+Website harus benar-benar berfungsi, responsif, kaya animasi, dan siap di-deploy sebagai frontend statis.
+
+Jangan hanya membuat mockup atau menjelaskan rencana. Kerjakan langsung pada project yang sedang terbuka.
+
+1. INFORMASI WEBSITE
+
+Nama penerima: Vera
+
+Tanggal ulang tahun: 23 April
+
+Judul utama:
+Happy Birthday, Vera!
+
+Subtitle:
+A little celebration just for you.
+
+Tanggal dekoratif:
+23 APRIL
+
+Konsep:
+Elegant pink editorial birthday book with interactive page-turning animations.
+
+Tujuan website adalah memberikan ucapan ulang tahun yang hangat kepada seorang teman.
+
+Gaya tulisan harus sederhana, manis, dan natural. Jangan terlalu romantis, jangan terlalu puitis, dan jangan menggunakan kata-kata berlebihan seperti "my love", "my forever", atau "my soulmate".
+
+Aturan mutlak karakter hati
+
+JANGAN menggunakan karakter Unicode berbentuk hati dalam bentuk apa pun di seluruh UI.
+
+Dilarang menggunakan:
+
+- "♡"
+- "♥"
+- "❤"
+- "❣"
+- Emoji hati dengan warna apa pun.
+- Karakter hati sebagai pengganti ikon visual.
+
+Semua ilustrasi berbentuk hati wajib dibuat menggunakan custom SVG.
+
+Aturan ini berlaku untuk judul, subtitle, ucapan, caption, tombol, dekorasi, halaman penutup, dan seluruh teks yang terlihat oleh pengunjung.
+
+Jangan menuliskan karakter hati tersebut di UI bahkan sebagai aksen kecil.
+
+2. FOTO UTAMA
+
+Gunakan dua foto berikut sebagai aset utama website.
+
+Foto pertama:
+https://x.xcute.workers.dev/f/images/e5ea96e31ea4.jpg
+
+Foto kedua:
+https://x.xcute.workers.dev/f/images/341ec79ac62c.jpg
+
+Kedua foto wajib digunakan.
+
+Ketentuan:
+
+- Jangan mengganti foto dengan gambar acak atau placeholder.
+- Jangan mengubah identitas orang dalam foto.
+- Jangan memberikan filter ekstrem yang merusak warna asli foto.
+- Gunakan "object-fit" dan "object-position" yang sesuai.
+- Hindari pemotongan wajah atau bagian penting foto.
+- Gunakan bingkai foto fisik dengan border ivory, bayangan natural, dan sudut lembut.
+- Berikan animasi entrance berbeda pada setiap foto.
+- Buat komposisi album yang asimetris dan editorial.
+- Tambahkan efek parallax ringan pada desktop.
+- Pada mobile, gunakan animasi berbasis scroll atau tap yang tetap nyaman.
+- Jika URL eksternal gagal dimuat, tampilkan fallback yang elegan tanpa merusak layout.
+
+Jangan membuat foto sekadar thumbnail kecil. Kedua foto merupakan bagian penting dari pengalaman membaca buku.
+
+3. DESAIN VISUAL
+
+Buat desain premium yang memadukan:
+
+- Elegant editorial design.
+- Vintage stationery.
+- Interactive digital storybook.
+- Premium scrapbook.
+- Soft pink birthday aesthetic.
+
+Hasil harus terlihat seperti karya custom, bukan template website ulang tahun yang umum.
+
+Color palette
+
+Gunakan warna berikut:
+
+- Background: "#F8EDF1"
+- Pale blush: "#F2DCE5"
+- Dusty pink: "#D9A6B8"
+- Muted rose: "#B86F89"
+- Deep rose: "#8E5269"
+- Warm ivory: "#FFF9F2"
+- Paper shadow: "#D8C0C7"
+- Rose gold: "#B88C83"
+- Main text: "#49343D"
+
+Jangan menggunakan satu warna pink secara datar pada seluruh halaman.
+
+Gunakan variasi tonal, gradient lembut, paper grain, highlight, bayangan bertingkat, dan pencahayaan ambient yang halus.
+
+Typography
+
+Gunakan kombinasi:
+
+- Cormorant Garamond atau Playfair Display untuk judul.
+- DM Sans atau Manrope untuk teks utama.
+- Caveat untuk beberapa catatan tangan yang pendek.
+
+Gunakan font fallback yang baik jika font eksternal gagal dimuat.
+
+Judul harus terlihat editorial, elegan, dan memiliki karakter. Jangan membuat semua teks italic atau menggunakan font tulisan tangan untuk seluruh konten.
+
+Material dan dekorasi
+
+Tambahkan secara selektif:
+
+- Tekstur serat kertas.
+- Subtle paper grain.
+- Hardcover dengan spine yang terlihat.
+- Lipatan halaman.
+- Bayangan antarlapisan kertas.
+- Pita satin pink.
+- Ornamen bunga tipis.
+- Garis editorial.
+- Nomor halaman.
+- Partikel cahaya kecil.
+- Printed-photo borders.
+
+Hindari stiker kartun, elemen neon, dekorasi berlebihan, dan desain yang terlalu kekanak-kanakan.
+
+4. STRUKTUR PENGALAMAN
+
+Website harus terasa seperti membaca buku ulang tahun digital, bukan sekadar landing page dengan beberapa card.
+
+Buat empat scene utama yang terhubung dengan navigasi halaman.
+
+SCENE 1 — BOOK COVER
+
+Saat website pertama kali dibuka, tampilkan sebuah buku hardcover dusty pink di tengah layar.
+
+Teks sampul:
+
+FOR VERA
+
+Happy Birthday!
+
+23 APRIL
+
+Tambahkan satu custom SVG heart kecil sebagai ornamen signature. SVG ini tidak boleh disertai karakter hati dalam teks.
+
+Desain buku:
+
+- Hardcover dengan ketebalan yang terlihat.
+- Spine dengan highlight dan shadow.
+- Rounded corners yang elegan.
+- Tekstur matte paper.
+- Pita satin pink.
+- Foil-like lettering.
+- Ornamen floral minimal.
+- Soft spotlight di sekitar buku.
+
+Buku harus memiliki kedalaman visual dan perspektif 3D, bukan terlihat seperti kotak datar.
+
+Opening animation
+
+1. Background muncul dengan soft fade.
+2. Buku masuk menggunakan transform dan perspective.
+3. Buku bergerak sedikit lalu berhenti dengan easing natural.
+4. Ornamen SVG muncul secara bertahap.
+5. Judul muncul dengan opacity dan transform.
+6. Tombol muncul setelah animasi utama selesai.
+
+Tombol:
+Open the Book
+
+Ketika ditekan:
+
+- Sampul terbuka dengan animasi 3D.
+- Gunakan CSS perspective dan transform-style jika sesuai.
+- Tampilkan bayangan halaman yang berubah saat sampul bergerak.
+- Reveal halaman pertama dengan transisi yang halus.
+- Pastikan interaksi tidak dapat dipicu berulang kali ketika animasi belum selesai.
+
+Opening tidak boleh terlalu lama. Pengunjung harus cepat bisa masuk ke konten utama.
+
+SCENE 2 — BIRTHDAY GREETING
+
+Setelah buku terbuka, tampilkan halaman ivory dengan layout editorial.
+
+Teks:
+
+Happy Birthday, Vera!
+
+Today is all about celebrating you.
+
+23 APRIL
+
+Ucapan utama:
+
+"Happy Birthday, Vera!
+
+Semoga di umur yang baru ini banyak hal baik datang ke kamu. Semoga selalu bahagia, sehat, dan semua yang kamu harapkan bisa tercapai.
+
+Have a wonderful birthday!"
+
+Pertahankan ucapan tersebut sebagai pesan utama. Jangan menambahkan paragraf romantis atau puisi panjang.
+
+Desain halaman:
+
+- Kertas ivory dengan tekstur sangat halus.
+- Headline serif berukuran besar.
+- Body text dengan line-height nyaman.
+- Ornamen bunga dan SVG kecil di bagian pinggir.
+- Whitespace yang cukup.
+- Bayangan kertas natural.
+- Nomor halaman editorial.
+
+Animasi:
+
+- Headline masuk dengan masked reveal.
+- Teks pendukung muncul secara bertahap.
+- Body text muncul menggunakan opacity dan translate yang lembut.
+- Ornamen SVG muncul dengan stagger.
+- Bayangan kertas berubah tipis saat halaman terbuka.
+
+Tombol navigasi:
+Previous
+Next Page
+
+Indikator:
+01 / 03
+
+SCENE 3 — PHOTO MEMORIES
+
+Buat halaman album foto yang elegan dan menjadi salah satu bagian paling menarik dari website.
+
+Gunakan kedua foto yang diberikan.
+
+Judul:
+Little Moments
+
+Subtitle:
+A collection of lovely memories.
+
+Jangan mengarang cerita mengenai tempat, tanggal, kejadian, atau hubungan yang tidak diketahui dari foto.
+
+Komposisi
+
+- Foto pertama menjadi focal point.
+- Foto kedua ditempatkan dengan komposisi asimetris.
+- Gunakan bingkai seperti cetakan foto fisik.
+- Tambahkan paper clip, masking tape, atau detail scrapbook secukupnya.
+- Gunakan sedikit rotasi pada foto agar terasa alami.
+- Berikan bayangan realistis.
+- Pastikan foto tidak bertabrakan dengan teks.
+
+Caption kecil yang boleh digunakan:
+A little memory
+
+Captured moments
+
+Jangan menambahkan karakter Unicode berbentuk hati ke caption.
+
+Animasi foto
+
+- Foto pertama masuk dari bawah dengan easing halus.
+- Foto kedua muncul dengan stagger.
+- Setiap foto memiliki floating motion yang berbeda.
+- Bayangan berubah tipis ketika foto bergerak.
+- Tambahkan subtle parallax pada desktop.
+- Tambahkan tap interaction untuk membuka foto dalam lightbox.
+- Lightbox menggunakan background gelap transparan dengan foto sebagai fokus.
+- Tambahkan animasi masuk dan keluar.
+- Lightbox harus bisa ditutup melalui tombol close, Escape pada desktop, dan tap di area luar yang sesuai.
+- Pastikan gambar tidak melampaui viewport.
+
+Tombol navigasi:
+Previous Page
+Next Page
+
+Indikator:
+02 / 03
+
+SCENE 4 — FINAL PAGE
+
+Buat halaman penutup yang memorable, hangat, dan tidak berlebihan.
+
+Teks utama:
+
+Have the loveliest birthday, Vera.
+
+Hope this new chapter brings you lots of happiness.
+
+With warm wishes,
+
+Jangan menambahkan karakter hati Unicode setelah teks atau di bagian tanda tangan.
+
+Gunakan satu custom SVG heart sebagai focal ornament kecil, dengan animasi yang elegan.
+
+Tambahkan:
+
+- Kelopak bunga jatuh perlahan.
+- Floating SVG hearts berukuran kecil.
+- Sparkles yang muncul sesekali.
+- Cahaya lembut di sekitar komposisi.
+- Stroke-drawing pada satu SVG heart.
+- Fill transition setelah stroke selesai.
+- Background pink yang sedikit lebih kaya.
+- Transisi ending yang lembut.
+
+Ending harus terasa seperti halaman terakhir sebuah buku yang dibuat dengan penuh perhatian, bukan deklarasi cinta romantis.
+
+Tombol:
+Read Again
+
+Saat ditekan, kembalikan buku ke sampul awal dan reset state yang relevan.
+
+Indikator:
+03 / 03
+
+5. CUSTOM SVG HEART SYSTEM
+
+Seluruh ilustrasi heart harus dibuat menggunakan custom SVG.
+
+Dilarang menggunakan icon library untuk ikon heart, emoji heart, gambar PNG heart, atau CSS pseudo-elements sebagai pengganti ilustrasi SVG.
+
+Buat komponen reusable, misalnya "HeartSVG".
+
+Jika menggunakan React, buat komponen React yang menerima props seperti:
+
+- size
+- color
+- fill
+- stroke
+- opacity
+- className
+- animationVariant
+- decorative
+- ariaLabel
+
+Jika menggunakan vanilla JavaScript, buat fungsi atau template SVG reusable yang dapat digunakan pada berbagai scene.
+
+Variasi SVG
+
+Buat setidaknya lima variasi:
+
+1. Classic soft heart.
+2. Thin outlined heart.
+3. Tiny floating heart.
+4. Organic hand-drawn heart.
+5. Stroke-drawing heart untuk halaman terakhir.
+
+Seluruh variasi harus memiliki bahasa visual yang konsisten.
+
+Gunakan kurva halus, proporsi seimbang, dan stroke yang tidak terlalu tebal.
+
+Warna yang digunakan:
+
+- Dusty pink.
+- Muted rose.
+- Pale blush.
+- Rose gold.
+
+Jangan menggunakan glossy effect berlebihan.
+
+Animasi SVG
+
+Implementasikan variasi:
+
+- Gentle floating.
+- Slow heartbeat pulse.
+- Subtle rotation.
+- Stroke drawing dengan "stroke-dasharray" dan "stroke-dashoffset".
+- Fill transition setelah outline selesai.
+- Fade and scale entrance.
+- Small SVG particle burst untuk interaksi tertentu.
+
+Gunakan variasi timing, delay, durasi, ukuran, dan arah gerakan.
+
+Jangan membuat seluruh SVG bergerak serentak.
+
+Batasi jumlah elemen yang dianimasikan agar website tetap ringan.
+
+Jangan menutupi teks, tombol, atau foto dengan dekorasi heart.
+
+PENTING: karakter hati Unicode tidak boleh muncul pada label, teks, atribut teks SVG yang terlihat, maupun konten UI lainnya. Ilustrasi SVG hanya berupa visual grafis.
+
+6. ANIMATION SYSTEM
+
+Website harus kaya animasi dan terasa hidup sejak awal hingga akhir.
+
+Jangan hanya menggunakan fade-in generik.
+
+Opening
+
+- Book entrance.
+- Cover tilt.
+- 3D opening rotation.
+- Paper reveal.
+- Ribbon sway.
+- Typography reveal.
+- SVG ornament drawing.
+
+Page transitions
+
+- Perspective rotation.
+- Page flip.
+- Paper shadow transition.
+- Page edge movement.
+- Layered content reveal.
+- Subtle depth illusion.
+
+Photo interactions
+
+- Staggered entrance.
+- Floating movement.
+- Parallax.
+- Tilt and settle.
+- Shadow response.
+- Lightbox transition.
+
+Decorative motion
+
+- Falling petals.
+- Floating SVG hearts.
+- Randomized but restrained sparkles.
+- Ambient lighting.
+- Ribbon movement.
+- Tiny paper particles.
+
+Text motion
+
+- Masked heading reveal.
+- Staggered entrance.
+- Smooth opacity transitions.
+- Handwriting effect untuk detail pendek.
+
+Button motion
+
+- Hover lift.
+- Active press feedback.
+- Shadow transition.
+- Subtle SVG microinteraction.
+
+Gunakan easing yang terasa premium, bukan bounce berlebihan.
+
+Jangan:
+
+- Menggerakkan seluruh elemen sekaligus.
+- Membuat zoom yang memusingkan.
+- Menjalankan ratusan partikel.
+- Menggunakan animasi berat tanpa alasan.
+- Membuat dekorasi bergerak sampai mengganggu pembacaan.
+
+Gunakan transform dan opacity untuk mayoritas animasi.
+
+Hormati "prefers-reduced-motion". Ketika pengguna mengaktifkannya, kurangi animasi dekoratif dan gunakan transisi yang lebih sederhana.
+
+7. INTERAKSI DAN NAVIGASI
+
+Implementasikan semua interaksi dengan state yang konsisten.
+
+Fitur wajib:
+
+- Open the Book.
+- Next Page.
+- Previous Page.
+- Read Again.
+- Photo lightbox.
+- Close lightbox.
+- Page indicator.
+- Keyboard navigation yang sesuai.
+- Escape untuk menutup lightbox.
+
+Ketentuan:
+
+- Tidak boleh pindah ke halaman yang tidak ada.
+- Tombol tidak boleh menjalankan page flip berkali-kali ketika transisi sedang berlangsung.
+- Page indicator harus sesuai dengan halaman aktif.
+- Read Again harus mengembalikan pengalaman ke kondisi awal.
+- Semua tombol memiliki hover, active, dan focus states.
+- Jangan membuat tombol dekoratif yang tidak melakukan apa pun.
+- Pastikan navigasi tetap dapat digunakan pada mobile.
+
+8. BACKGROUND MUSIC OPSIONAL
+
+Musik latar merupakan fitur tambahan, bukan prioritas utama.
+
+Jika tersedia audio asset yang legal:
+
+- Tambahkan tombol mute/unmute.
+- Mulai musik hanya setelah interaksi pengguna atau izin browser yang sesuai.
+- Jangan memaksakan autoplay bersuara.
+- Tampilkan status musik dengan jelas.
+- Jika audio tidak tersedia, website tetap berfungsi sempurna.
+
+Jangan mengarang URL musik eksternal.
+
+9. RESPONSIVE DESIGN
+
+Mobile-first wajib karena website akan dibuka melalui browser HP atau tautan WhatsApp.
+
+Mobile
+
+- Buku menyesuaikan lebar layar.
+- Tidak ada horizontal overflow.
+- Tidak memaksa layout landscape.
+- Teks tetap mudah dibaca.
+- Foto ditata ulang secara responsif.
+- Tombol mudah disentuh.
+- Pertahankan ilusi 3D dengan performa yang baik.
+- Jangan mengandalkan hover.
+- Perhatikan safe areas perangkat.
+
+Tablet
+
+- Pertahankan komposisi editorial.
+- Gunakan ukuran buku dan foto yang proporsional.
+- Hindari whitespace berlebihan.
+
+Desktop
+
+- Buku dapat tampil lebih besar.
+- Gunakan perspektif 3D yang lebih terasa.
+- Manfaatkan ruang kosong dan komposisi asimetris.
+- Aktifkan pointer parallax jika perangkat mendukung hover.
+
+Gunakan breakpoint sesuai kebutuhan layout, bukan hanya mengikuti angka default framework.
+
+10. IMPLEMENTASI TEKNIS
+
+Sebelum mengubah kode:
+
+1. Periksa struktur folder.
+2. Baca package.json jika tersedia.
+3. Identifikasi framework dan dependency yang sudah terpasang.
+4. Periksa aset yang sudah tersedia.
+5. Pertahankan stack yang masih relevan.
+
+Jika project menggunakan React, gunakan komponen reusable untuk:
+
+- BookCover.
+- BookPage.
+- BirthdayGreeting.
+- PhotoGallery.
+- PhotoLightbox.
+- HeartSVG.
+- PageNavigation.
+- FinalPage.
+
+Jika project menggunakan HTML/CSS/vanilla JavaScript, pertahankan struktur sederhana dengan pemisahan file yang jelas.
+
+Jangan mengganti framework tanpa alasan yang kuat.
+
+Persyaratan:
+
+- Tidak membutuhkan backend.
+- Tidak membutuhkan database.
+- Tidak membutuhkan login.
+- Tidak membutuhkan VPS.
+- Tidak membutuhkan API berbayar.
+- Bisa di-deploy ke Vercel sebagai frontend statis.
+- Hindari dependency berlebihan.
+- Jangan memasukkan secret atau API key yang tidak diperlukan.
+
+Pastikan seluruh animasi dan navigasi berfungsi di browser modern.
+
+11. PERFORMANCE DAN ACCESSIBILITY
+
+Targetkan performa yang smooth di HP Android kelas menengah.
+
+Persyaratan:
+
+- Gunakan transform dan opacity untuk animasi.
+- Batasi jumlah partikel aktif.
+- Hindari animasi filter yang berat.
+- Gunakan lazy loading untuk foto yang tidak langsung terlihat jika sesuai.
+- Berikan dimensi gambar untuk mencegah layout shift.
+- Jangan menghapus outline fokus tanpa pengganti.
+- Gunakan semantic HTML.
+- Gunakan alt text yang sesuai.
+- Tandai SVG dekoratif dengan "aria-hidden="true"".
+- Gunakan label tombol yang jelas.
+- Pastikan kontras teks memadai.
+- Hormati reduced motion.
+- Pastikan elemen interaktif tidak saling menutupi.
+
+Jangan mengorbankan performa hanya untuk menambah jumlah animasi.
+
+12. FINAL QUALITY CHECK
+
+Setelah implementasi selesai:
+
+1. Jalankan build atau development checks yang tersedia.
+2. Perbaiki error sintaks dan error build.
+3. Pastikan kedua foto benar-benar digunakan.
+4. Pastikan semua ilustrasi heart menggunakan custom SVG.
+5. Cari dan hapus seluruh karakter Unicode berbentuk hati dari teks UI.
+6. Pastikan tidak ada emoji heart yang tersisa.
+7. Pastikan navigasi ant halaman berfungsi.
+8. Pastikan page indicator selalu sinkron.
+9. Pastikan Read Again kembali ke awal.
+10. Pastikan lightbox dapat dibuka dan ditutup.
+11. Periksa layout mobile dan desktop jika tooling tersedia.
+12. Periksa horizontal overflow.
+13. Pastikan reduced-motion behavior bekerja.
+14. Pastikan tidak ada tombol mati.
+15. Pastikan tidak ada placeholder yang tertinggal.
+16. Periksa error yang dapat dideteksi melalui tooling yang tersedia.
+
+Jangan mengklaim telah melakukan browser testing jika browser testing tidak benar-benar dijalankan.
+
+Jika menemukan masalah, perbaiki sebelum menyatakan pekerjaan selesai.
+
+13. HASIL AKHIR YANG DIINGINKAN
+
+Website harus terasa seperti:
+
+"An elegant pink birthday book that comes alive when opened."
+
+Prioritas:
+
+1. Opening buku 3D yang memukau.
+2. Desain editorial pink yang elegan.
+3. Kedua foto tampil dengan komposisi yang cantik.
+4. Custom SVG heart system yang konsisten.
+5. Banyak animasi yang halus dan terarah.
+6. Ucapan sederhana dan hangat.
+7. Responsif di HP.
+8. Kode yang berjalan dan mudah dipelihara.
+
+Jangan membuat website terlihat seperti template ucapan ulang tahun generik.
+
+Jangan hanya membuat hero section atau preview. Implementasikan seluruh pengalaman dari sampul hingga halaman terakhir.
+
+Kerjakan langsung pada project yang ada. Setelah selesai, berikan ringkasan file yang diubah, hasil pemeriksaan, dan perintah untuk menjalankan website.
+
+Sekali lagi, jangan pernah menampilkan karakter Unicode berbentuk hati di UI. Semua elemen visual heart harus menggunakan SVG custom.
